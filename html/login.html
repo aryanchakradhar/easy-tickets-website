@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Easy Tickets</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="login">
+            <div class="error-message main-error" id="main_error"></div>
+            <div class="login-container">
+                <a class="logo" href="/html/home.html">
+                    <img src="/images/logo.png" class="logo-img" alt="Easy Tickets logo" loading="lazy" width="36px">
+                    <div class="logo-title">Easy Tickets</div>
+                </a>
+                <form onsubmit="return validateLogin()" class="form">
+                    <div class="input-container">
+                        <label>Email address</label>
+                        <input type="text" class="input" value="" id="email" placeholder="Enter your email address.">
+                        <div class="error-message" id="email_error"></div>
+                    </div>
+                    <div class="input-container">
+                        <label>Password</label>
+                        <input type="password" class="input" value="" id="password" placeholder="Enter your password.">
+                        <div class="error-message" id="password_error"></div>
+                    </div>
+                    <button class="btn-primary" type="submit">Login</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="/js/main.js"></script> 
+</body>
+</html>
